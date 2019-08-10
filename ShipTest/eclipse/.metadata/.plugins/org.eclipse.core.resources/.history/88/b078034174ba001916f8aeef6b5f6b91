@@ -1,0 +1,6 @@
+package taiwan402.TestMod00.util;
+
+public class Ref {
+	public static final String MOD_ID = "CrazyBows_Taiwan402"
+	public static final String	
+}

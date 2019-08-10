@@ -1,0 +1,13 @@
+package taiwan402.TestMod00.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import net.minecraft.item.Item;
+import taiwan402.TestMod00.items.ItemBase;
+
+public class ModItems {
+	public static final List<Item> ITEMS = new ArrayList<Item>();
+	
+	public static final Item RUBY = new ItemBase("ruby");
+}

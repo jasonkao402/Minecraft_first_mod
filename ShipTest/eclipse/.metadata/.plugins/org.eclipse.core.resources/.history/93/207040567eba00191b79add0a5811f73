@@ -1,0 +1,6 @@
+package taiwan402.TestMod00;
+
+Mod(modid = Ref.MOD_ID, name = Ref.NAME, version = Ref.VERSION)
+public class Main {
+
+}

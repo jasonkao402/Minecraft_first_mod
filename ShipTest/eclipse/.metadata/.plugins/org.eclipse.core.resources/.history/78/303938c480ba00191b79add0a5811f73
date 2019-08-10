@@ -1,0 +1,16 @@
+[
+{
+  "modid": "CrazyBows_Taiwan402",
+  "name": "CrazyBows",
+  "description": "CrazyBows by Taiwan402.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

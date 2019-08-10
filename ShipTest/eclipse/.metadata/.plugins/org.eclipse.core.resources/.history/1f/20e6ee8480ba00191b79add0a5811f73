@@ -1,0 +1,18 @@
+package taiwan402.TestMod00;
+
+import taiwan402.TestMod00.util.Ref;
+import taiwan402.TestMod00.proxy.CommonProxy;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+
+@Mod(modid = Ref.MOD_ID, name = Ref.NAME, version = Ref.VERSION)
+
+public class Main {
+	@Instance
+	public static Main instance;
+	
+	@SidedProxy(clientSide = Ref.CLIENT_PROXY_CLASS, serverSide = Ref.COMMON_PROXY_CLASS)
+	public static CommonProxy proxy;
+}

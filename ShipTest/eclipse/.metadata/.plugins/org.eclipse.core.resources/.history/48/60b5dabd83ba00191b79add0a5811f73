@@ -1,0 +1,5 @@
+package taiwan402.TestMod00.proxy;
+
+public class ClientProxy extends CommonProxy{
+
+}
