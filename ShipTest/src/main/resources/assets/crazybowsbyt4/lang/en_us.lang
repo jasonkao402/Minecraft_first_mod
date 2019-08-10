@@ -2,4 +2,11 @@
 item.ruby.name=Ruby
 
 //BLOCK
-tile.ruby_block.name=[Block of Ruby]
+tile.ruby_block.name=Ruby TNT
+
+//TOOL
+item.ruby_sword.name=Ruby Sword
+item.ruby_axe.name=Ruby Axe
+item.ruby_pickaxe.name=Ruby Pickaxe
+item.ruby_shovel.name=Ruby Shovel
+item.ruby_hoe.name=Ruby Hoe
