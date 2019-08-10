@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "crazybowsbyt4:blocks/ruby_block"
+   }
+}
