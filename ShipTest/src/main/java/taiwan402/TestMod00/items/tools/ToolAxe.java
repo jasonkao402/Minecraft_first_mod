@@ -8,9 +8,9 @@ import taiwan402.TestMod00.util.IHasModel;
 
 public class ToolAxe extends ItemAxe implements IHasModel
 {
-	public ToolAxe(String n, ToolMaterial m)
+	public ToolAxe(String n, ToolMaterial m, float dmg, float spd)
 	{
-		super(m, 6F, 2F);
+		super(m, dmg, spd);
 		setUnlocalizedName(n);
 		setRegistryName(n);
 		setCreativeTab(CreativeTabs.TOOLS);

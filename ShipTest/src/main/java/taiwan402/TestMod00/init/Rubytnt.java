@@ -1,6 +1,5 @@
 package taiwan402.TestMod00.init;
 
-import javax.annotation.Nullable;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -8,7 +7,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
