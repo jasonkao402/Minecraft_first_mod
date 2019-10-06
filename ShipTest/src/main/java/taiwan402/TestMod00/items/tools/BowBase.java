@@ -81,6 +81,7 @@ public class BowBase extends ItemBow implements IHasModel
 		
 		ModItems.ITEMS.add(this);
 	}
+	
 	@Override
 	public int getMaxItemUseDuration(ItemStack itemstack)
 	{
@@ -136,7 +137,6 @@ public class BowBase extends ItemBow implements IHasModel
 			EntityPlayer entityplayer = (EntityPlayer)entityLiving;
 			boolean flag = entityplayer.capabilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, stack) > 0;//flag is true if no arrows are to be consumed
 			ItemStack itemstack = this.findAmmo(entityplayer);//looks for ammo (see above)
-	
 			int i = this.getMaxItemUseDuration(stack) - timeLeft;//the time that it has been used for
 			
 			i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(stack, worldIn, entityplayer, i, !itemstack.isEmpty() || flag);
@@ -177,8 +177,6 @@ public class BowBase extends ItemBow implements IHasModel
 							if (EnchantmentHelper.getEnchantmentLevel(Enchantments.FLAME, stack) > 0){
 								entityarrow.setFire(100);//adds fire
 							}
-						
-							
 						
 							if (flag1 || entityplayer.capabilities.isCreativeMode && (itemstack.getItem() == Items.SPECTRAL_ARROW || itemstack.getItem() == Items.TIPPED_ARROW)){
 								entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;//prevents survival players from picking up the arrow

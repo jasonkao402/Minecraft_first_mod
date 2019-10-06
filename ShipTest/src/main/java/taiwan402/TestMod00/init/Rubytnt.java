@@ -19,8 +19,7 @@ public class Rubytnt extends BlockBase{
 		super(n, m);
 		setSoundType(SoundType.CLOTH);
 	}
-	
-	public boolean onBlockActivatedWorld (World worldIn,
+	public boolean onBlockActivated (World worldIn,
     BlockPos pos,
     IBlockState state,
     EntityPlayer playerIn,
@@ -32,7 +31,8 @@ public class Rubytnt extends BlockBase{
 	{
 		if (playerIn.getHeldItemMainhand().getItem() == Items.FLINT_AND_STEEL) {
         	worldIn.setBlockToAir(pos);
-            EntityTNTPrimed var6 = new EntityTNTPrimed(worldIn, pos.getX(), pos.getY(), pos.getZ(), null);
+            EntityTNTPrimed var6 = new EntityTNTPrimed(worldIn, pos.getX(), pos.getY(), pos.getZ(), playerIn);
+            var6.addVelocity(0, 10, 0);
             var6.setFuse(80);
             worldIn.spawnEntity(var6);
             return true;
